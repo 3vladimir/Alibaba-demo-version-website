@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .footerUpPartInnerContainer {
+    width: 93%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  
+  .footerUPPartColumnsFather {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+  
+  .footerUpPartColumns {
+    width: 15%;
+  }
+  
+  .footerUpPartColumnsItems {
+    padding: 2px 0;
+    display: table;
+    cursor: pointer;
+  }
+  
+  .footerUpPartColumnsItems:hover {
+    text-decoration: underline;
+  }
+  
+  .footerUpPartColumnsTitleItem {
+    cursor: auto;
+  }
+  
+  .footerUpPartColumnsTitleItem:hover {
+    text-decoration: none;
+  }
+  
+  .footerLists {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footerUpPartContactWays {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footerUpPartSocialNetworksList {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
+  
+  .footerUpPartSocialNetworksIcons {
+    cursor: pointer;
+    opacity: 0.6;
+    font-size: 1.5em;
+  }
+  
+  .footerUpPartSocialNetworksIcons:hover {
+    opacity: 0.9;
+  }
+  
+  .footerUpPartApplicationLinksIcon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  .footerDownPartOuterContainer {
+    background-color: rgb(246, 243, 243);
+  }
+  
+  .footerDownPartInnerContainer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footerDownPartItems {
+    font-size: 0.9em;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  .footerDownPartItems:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .footerUpPartColumnsItems {
+      font-size: x-small;
+    }
+    .footerUpPartSocialNetworksIcons{
+      font-size: 1em;
+    }
+    .footerUpPartApplicationLinks{
+      font-size: small;
+    }
+    
+    .footerUpPartApplicationLinksIcon{
+      font-size: x-small;
+    }
+    .footerDownPartItems{
+      font-size: x-small;
+    }
+    .footerDownPartInnerContainer{
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  

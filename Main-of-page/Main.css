@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+.bannerOuterContainer {
+  background-image: url("./coffee.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.bannerInnerContainer {
+  padding-top: 5px;
+  width: 93%;
+  margin: 0 auto;
+}
+
+/* bannerNav */
+
+.bannerNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bannerNavWholeItemsFather {
+  padding-top: 10px;
+  display: flex;
+}
+
+.bannerNavLeftItemsFather {
+  justify-content: flex-start;
+}
+
+.bannerNavRightItemsFather {
+  justify-content: flex-end;
+}
+
+.bannerNavLeftItems {
+  padding-right: 1em;
+}
+
+.bannerNavRightItems {
+  padding-left: 1em;
+}
+
+.bannerNavItems {
+  cursor: pointer;
+}
+
+/* bannerNavSubMenu */
+
+.bannerNavItemsFeaturedSelectionsSubMenu {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.bannerNavItemsFeaturedSelectionsSubMenuItem {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px 80px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.bannerNavItemsTradeAssurnaceSubMenu {
+  display: flex;
+  padding: 40px 40px 40px 160px;
+  font-weight: 600;
+}
+
+.banneerNAvItemsTradeAsuurnaceSubMenuRightItems {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.banneerNAvItemsTradeAsuurnaceSubMenuRightItemsBoxes {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  padding: 35px;
+  background-color: rgb(232, 228, 228);
+  border-radius: 15px;
+}
+
+.banneerNAvItemsTradeAsuurnaceSubMenuRightItemsBoxesIcons {
+  margin-right: 5px;
+  background-color: yellow;
+  font-size: 2.5em;
+}
+
+.bannerNavItemsBuyerCentralSubMenu {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bannerNavItemsBuyerCentralSubMenuColumns {
+  width: 20%;
+}
+
+.bannerNavSubMenuList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bannerNavSubMenuList li {
+  padding: 5px 0;
+}
+
+.bannerNavSubMenuList li:hover {
+  text-decoration: underline;
+}
+
+/* bannercontents */
+
+.bannerContents {
+  padding: 100px 50% 100px 0;
+}
+
+.bannerTopOfTitleLink {
+  font-size: 1.2em;
+  display: flex;
+  cursor: pointer;
+}
+
+.bannerTitle {
+  font-size: 3.2em;
+  margin: 30px 0;
+}
+
+.bannerInput {
+  width: 100%;
+  padding: 20px 30% 20px 3%;
+  border-radius: 30px;
+  outline-style: none;
+}
+
+.bannerInputSearchButton {
+  font-size: 1.1em;
+  cursor: pointer;
+  background-color: darkorange;
+  position: absolute;
+  right: 1%;
+  top: 10%;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+.searchSuggestionItemsFather {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 2em;
+}
+
+.searchSuggestionOptions {
+  cursor: pointer;
+  padding: 5px 20px;
+  border-width: 2px;
+  border-color: white;
+  border-style: groove;
+  border-radius: 25px;
+}
+
+.searchSuggestionOptions:hover {
+  background-color: darkslategray;
+}
+
+/* lowerPartOfBannerOuterContainer */
+
+.lowerPartOfBannerOuterContainer {
+  background-color: rgb(129, 23, 23);
+}
+
+.lowerPartOfBannerInnerContainer {
+  padding: 50px 0;
+  width: 93%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lowerPartOfBannerItems {
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  width: 23%;
+  background-color: rgb(136, 51, 51);
+  padding: 30px;
+}
+
+.lowerPartOfBannerItems:hover {
+  background-color: rgb(136, 68, 51);
+}
+
+.lowerPartOfBannerItems:hover .lowerPartOfBannerItemsIcons {
+  color: orange;
+}
+
+.lowerPartOfBannerItemsIcons {
+  font-size: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  .bannerNavItemsTitle {
+    font-size: smaller;
+  }
+  .bannerNavItemsFeaturedSelectionsSubMenuItem{
+    font-size: small;
+  }
+  .banneerNAvItemsTradeAsuurnaceSubMenuRightItems{ 
+    
+    align-content:space-evenly;
+    }
+  .banneerNAvItemsTradeAsuurnaceSubMenuRightItemsBoxes {
+  align-items: start;
+    padding: 15px;
+  }
+  .banneerNAvItemsTradeAsuurnaceSubMenuRightItemsBoxesIcons{
+    font-size: 1.5em;
+  }
+
+  .bannerNavItemsTradeAssurnaceSubMenu {
+    padding: 20px 20px 20px 80px;
+  }
+  .banneerNAvItemsTradeAsuurnaceSubMenuLeftItemsTitels,
+  .banneerNAvItemsTradeAsuurnaceSubMenuRightItemsBoxes {
+    font-size: smaller;
+  }
+  .bannerNavSubMenuList {
+    font-size: smaller;
+  }
+  .bannerTopOfTitleLink {
+    font-size: 1em;
+  }
+  .bannerTitle {
+    font-size: 2em;
+  }
+
+  .bannerInput {
+    padding: 10px 30% 10px 3%;
+    border-radius: 30px;
+  }
+
+  .bannerInputSearchButton {
+    /* top:0; */
+    font-size: small;
+    padding: 6px 12px;
+  }
+  .searchSuggestionChildren {
+    font-size: small;
+  }
+  .searchSuggestionItemsFather {
+    align-items: center;
+  }
+
+  .searchSuggestionOptions {
+    text-align: center;
+    font-size: x-small;
+    padding: 2px 10px;
+  }
+  .lowerPartOfBannerItems h3 {
+    font-size: 1.5em;
+  }
+  .lowerPartOfBannerItems {
+    font-size: x-small;
+    padding: 10px;
+  }
+}

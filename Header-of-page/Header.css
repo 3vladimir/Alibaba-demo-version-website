@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+.titleOfWebsite {
+  display: flex;
+}
+
+.nav {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItem {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.navSubMenuOuterContainer {
+  z-index: 2;
+  width: max-content;
+  cursor: auto;
+  position: absolute;
+  color: black;
+}
+
+.navSubMenuInnerContainer {
+  padding: 1% 5%;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 2.5em;
+}
+
+.navSubNenuList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navLocationSubMenu {
+  right: 20%;
+}
+
+.navLocationOrItem {
+  text-align: center;
+  opacity: 0.5;
+}
+
+.navLocationOrItem::after,
+.navLocationOrItem::before {
+  content: " ";
+  display: inline-block;
+  height: 1px;
+  width: 45%;
+  background-color: black;
+}
+
+.navInput {
+  padding: 0.3em;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 0.3em;
+}
+
+.navLanguageSubMenu {
+  width: 25%;
+  right: 8%;
+}
+
+.navSignInSubMenu {
+  width: 20em;
+  right: 5%;
+}
+
+.navSignInSubMenuApps {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navSignInSubMenuAppsIcon {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.navSignInSubMenuSmallSizeText {
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+.navSignInSubMenuSmallSizeTextLink {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.navSignInSubMenuLinks {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+
+.navSignInSubMenuLinksItem {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.navSignInSubMenuLinksItem:hover {
+  font-weight: 600;
+  background-color: gainsboro;
+}
+
+.lineThineFullWidth {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.headerOuterContainer {
+  background-color: black;
+}
+
+.headerInnerContainer {
+  color: white;
+  width: 93%;
+  margin: 0 auto;
+}
+
+.topMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0;
+}
+
+@media screen and (max-width: 800px) {
+  .navItemText {
+    display: none;
+  }
+  .navSubMenuInnerContainer {
+    margin-top: 1.4em;
+    width: 15em;
+  }
+  .navLanguageSubMenu {
+    right: 20%;
+  }
+  .navSignInSubMenu {
+    right: -5%;
+  }
+  .titleOfWebsite {
+    font-size: 1.5em;
+  }
+}
